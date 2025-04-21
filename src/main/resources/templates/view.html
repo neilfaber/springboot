@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employees List</title>
+</head>
+<body>
+    <h1>Registered Employees</h1>
+    <ul>
+        <th:block th:each="employee : ${employees}">
+            <li>
+                <span th:text="${employee.name}"></span> |
+                <span th:text="${employee.email}"></span> |
+                <span th:text="${employee.phone}"></span>
+            </li>
+        </th:block>
+    </ul>
+</body>
+</html>
